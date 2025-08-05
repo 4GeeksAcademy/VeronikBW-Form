@@ -15,7 +15,7 @@
 <body>
 
 
-    <form class="container border p-0 border-secondary-subtle">
+    <form class="container border p-0 border-secondary-subtle rounded mt-5">
         <div class="container p-3 bg-secondary-subtle m-0 border-bottom border-secondary-subtle"> <!--Tittle-->
             <h1>Payment form example</h1>
         </div>
@@ -25,15 +25,15 @@
         </div>
         <!-- card cvc and amount -->
         <div class="row p-3">
-            <div class="mb-3 col">
+            <div class="mb-3 col-12 col-lg-5">
                 <label for="Card" class="form-label">Card #</label>
                 <input type="number" class="form-control" id="Card" placeholder="XXXXXXXXXXXXXXXX">
             </div>
-            <div class="mb-3 col">
+            <div class="mb-3 col-12 col-lg-3">
                 <label for="cvc" class="form-label">CVC #</label>
                 <input type="number" class="form-control" id="cvc" placeholder="0000">
             </div>
-            <div class="mb-3 col">
+            <div class="mb-3 col-12 col-lg-4">
                 <label for="amount" class="form-label">Amount #</label>
                 <div class="d-flex">
                     <spam class="mt-1"> $</spam>
@@ -44,7 +44,7 @@
         <div class="row p-3">
             <!-- body left -->
             <div class="col-6">
-                <form>
+                <div>
                     <div class="mb-3">
                         <label for="FirstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="FirstName" aria-describedby="emailHelp">
@@ -55,7 +55,7 @@
                     </div>
                     <!-- payment -->
                     <p>We accept:</p>
-                    <div class="container bg-secondary d-inline text-light fs-5">
+                    <div class="container bg-secondary d-inline text-light fs-5 rounded">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                                 value="option1">
@@ -78,7 +78,7 @@
                             <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-paypal"></i></label>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
             <!-- body right -->
             <div class="col-6">
@@ -87,7 +87,7 @@
                     <input type="text" class="form-control" id="LastName">
                 </div>
                 <div class="row">
-                    <div class="col 6">
+                    <div class="col-12 col-lg-6">
                         <label class="form-label">State</label>
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Pick a state</option>
@@ -97,7 +97,7 @@
                             <option value="4">Panem</option>
                         </select>
                     </div>
-                    <div class="col 6">
+                    <div class="col-12 col-lg-6">
                         <div class="mb-3">
                             <label for="PostalCode" class="form-label">Postal Code</label>
                             <input type="number" class="form-control" id="PostalCode">
@@ -107,17 +107,16 @@
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" rows="3"></textarea>
+                    <div id="message" class="form-text">Add any notes here.</div>
                 </div>
             </div>
         </div>
         <!-- Buttons -->
 
         </div>
-        <div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end p-3 border-top border-secondary-subtle bg-secondary-subtle">
                 <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
                 <button class="btn btn-primary" type="button">Send</button>
-            </div>
         </div>
     </form>
 
